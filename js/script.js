@@ -1,11 +1,21 @@
-let myTask = "";
-let letters=[];
+function main() {
 
-myTask = "Get user input via JavaScript";
+    const readline = require("readline");
 
-for (let char = 0; char < myTask.length; char++){
-    let myChar = myTask[char];
-    letters.push(myChar);
+    const interface = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    })
+
+    let myTask = "";
+    let letters=[];
+
+    interface.question("What is my next task?", (myTask) => {
+
+        console.log(myTask);
+        // Close the interface.
+        interface.close();
+    });  
 }
 
-console.log(letters);
+main()
