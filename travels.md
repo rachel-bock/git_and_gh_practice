@@ -9,3 +9,5 @@ As an adult, I've traveled to Orlando for a seminar.
 My sons would like to fly on a plane.
 
 I would like to plan a vacation for the week around my birthday this year (2022).  I am hopeful that we'll all have the time off to take a vacation.
+
+I am not as optimistic as I was about planning a vacation in 2022.  
