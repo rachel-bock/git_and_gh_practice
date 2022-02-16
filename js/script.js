@@ -9,12 +9,19 @@ function main() {
 
     let myTask = "";
     let letters=[];
+    let close = false;
 
-    interface.question("What is my next task?", (myTask) => {
+    
+    interface.question("What is my next task? ", (myTask) => {
 
         console.log(myTask);
         // Close the interface.
-        interface.close();
+        interface.question("Continue? ", (answer) =>{
+            if(answer === "No"){
+                close = true;
+                interface.close();
+            }
+        })
     });  
 }
 
