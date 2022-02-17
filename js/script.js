@@ -16,13 +16,13 @@ function main() {
 
         console.log(myTask);
         // Close the interface.
-        interface.question("Continue? ", (answer) =>{
+        interface.question("Continue? No to exit", (answer) =>{
             if(answer === "No"){
                 close = true;
                 interface.close();
             }
-        })
+        });
     });  
 }
 
-main()
+main();
